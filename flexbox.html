@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Practice</title>
+    <link rel="stylesheet" href="flexbox_styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/cupcake_logo.png" alt="The Cupcakery Logo">
+        <h1>The Cupcakery</h1>
+        <p>Your Hometown Bakery for Gluten Free Cupcakes and More!</p>
+    </header>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <section>
+                <h2>Order Online</h2>
+                <form action="order" method="post">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    <label for="event">Event Type</label>
+                    <select>
+                        <option value="0">Select Event Type:</option>
+                        <option value="1">Birthday</option>
+                        <option value="2">Anniversary</option>
+                        <option value="3">Wedding</option>
+                        <option value="4">Bridal Shower</option>
+                        <option value="5">Baby Shower</option>
+                        <option value="6">Other</option>
+                    </select>
+
+                    <label for="flavor">Cake Flavor</label>
+                    <select>
+                        <option value="0">Select Flavor:</option>
+                        <option value="1">Chocolate</option>
+                        <option value="2">Vanilla</option>
+                        <option value="3">Red Velvet</option>
+                        <option value="4">Carrot Cake</option>
+                        <option value="5">Funfetti</option>
+                        <option value="6">Marble</option>
+                    </select>
+
+
+                </form>
+            </section>
+
+            <section>
+                <h2>Testimonials</h2>
+                <blockquote>
+                    &#129473; "The Cupcakery's gluten-free vanilla cupcakes are the best!  You'd never
+                    know they're gluten free. - Suzie S."
+                </blockquote>
+
+                <blockquote>
+                    &#129473; "My family had no idea the cake was gluten-free!  Thank you for providing people
+                    with allergies yummy alternatives. - Jane D."
+                </blockquote>
+
+                <blockquote>
+                    &#129473; "The Cupcakery supplied all the desserts for my mom's surprise birthday party.
+                    Everyone raved about how good everything was! - John M."
+                </blockquote>
+            </section>
+
+        </div>
+
+    </div>  
+
+    <footer class="footer">
+        <ul>
+            <li>&copy; 2024 Jessica Ulrich  Module 8 - Lesson 3 - CSS Layout Design with Flexbox</li>
+            <li><a href="#contact">Contact Us!</a></li>
+            <li><a href="#upcoming_events">Upcoming Events</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

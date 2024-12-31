@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+body {
+    font-family: Playfair, sans-serif;
+    color: rgb(48, 63, 57);
+    background-color: white;
+}
+
+header {
+    background-color: rgb(198, 209, 207);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-bottom: 0;
+
+}
+
+h1 {
+    font-family: Cookie, sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+}
+
+header img {
+    height: 200px;
+    width: auto;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
+}
+
+.navigation, .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+.navigation ul, .footer ul {
+    display: flex;
+}
+
+.navigation li, .footer li {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.navigation a {
+    color: rgb(48, 63, 57);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+  
+.navigation a:hover, .footer a:hover {
+    color: rgb(190, 78, 46);
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 70%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid rgb(48, 63, 57);
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+blockquote {
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(198, 209, 207);
+    bottom: 0;
+}
+.footer a {
+    color: rgb(48, 63, 57);
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.footer li {
+    font-size: 16px;
+    font-style: italic;
+}
+
+@media screen and (max-width:600px){
+    .navigation ul, .footer ul, .main-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
